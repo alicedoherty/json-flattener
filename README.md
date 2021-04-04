@@ -2,10 +2,10 @@
 Program written in Python to take JSON file in as input and outputs flattened version of the JSON object.
 
 ## To Run:
-### If using Linux
-From the command line run `python3 flatten.py input.json`
+### Using Linux
+From command line run `python3 flatten.py input.json`
 
-### If using Windows
+### Using Windows
 From command line run `python flatten.py input.json`
 
 ### Notes
