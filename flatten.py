@@ -29,11 +29,13 @@ def main():
         flattened_json = flattener(json_input)
 
         # flattened JSON converted to JSON formatted str
-        json_result = json.dumps(flattened_json)
+        json_result = json.dumps(flattened_json, indent = 4)
+        print(json_result)
 
-        # flattened JSON outputted to output.json
+        # converted flattened JSON (dict) to JSON formatted str and outputs to output.json
         with open("output.json", "w") as fp:
             json.dump(flattened_json, fp, indent = 4)
+        
     except FileNotFoundError as e:
         print("Input file not valid. Errno:", e.errno)
     except IndexError as e:
